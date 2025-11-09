@@ -1,0 +1,21 @@
+*{
+    background-color: #edf1d7;
+    padding: 4px;
+    
+   
+    
+}
+
+
+
+#header-Text{
+    
+  font-size: 200px;
+  background: -webkit-linear-gradient(#8A9465, #D1CEB4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px; 
+  padding: 0px;
+
+
+}
