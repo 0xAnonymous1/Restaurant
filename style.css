@@ -4,7 +4,7 @@
 }
 
 #header-Text {
-  
+
   background: -webkit-linear-gradient(#8a9465, #d1ceb4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -81,4 +81,53 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+section form input,
+section form select {
+  height: 50px;
+  font-size: 15px;
+}
+
+.btn-dark:hover {
+  background: #121212 !important;
+  transition: 0.3s;
+}
+
+.highlight-section {
+  background: #f8d86b;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 60px 30px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #222;
+  max-width: 800px;
+  margin: 80px auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.highlight-section .btn {
+  background-color: #4b785e;
+  color: white;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.highlight-section .btn:hover {
+  background-color: #3d664f;
+}
+
+footer a:hover {
+  color: #ffffff !important;
+  transition: 0.2s;
 }
