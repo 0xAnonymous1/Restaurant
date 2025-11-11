@@ -4,7 +4,7 @@
 }
 
 #header-Text {
-  font-size: 200px;
+  
   background: -webkit-linear-gradient(#8a9465, #d1ceb4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -20,4 +20,20 @@
 
 .nav-tabs .nav-link {
   color: #555;
+}
+
+.card-back-1 {
+  width: 220px;
+  height: 220px;
+  /* top: px;
+  left: px; */
+  transform: rotate(20deg);
+}
+
+.card-back-2 {
+  width: 220px;
+  height: 220px;
+  /* top: px;
+  left: px; */
+  transform: rotate(40deg);
 }
