@@ -1,21 +1,23 @@
-*{
-    background-color: #edf1d7;
-    padding: 4px;
-    
-   
-    
+* {
+  background-color: #edf1d7;
+  padding: 4px;
 }
 
-
-
-#header-Text{
-    
+#header-Text {
   font-size: 200px;
-  background: -webkit-linear-gradient(#8A9465, #D1CEB4);
+  background: -webkit-linear-gradient(#8a9465, #d1ceb4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0px; 
+  margin: 0px;
   padding: 0px;
+}
 
+.nav-tabs .nav-link.active {
+  background-color: #d7c39a;
+  color: #000;
+  font-weight: bold;
+}
 
+.nav-tabs .nav-link {
+  color: #555;
 }
