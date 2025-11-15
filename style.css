@@ -13,6 +13,34 @@
   font-size: 200px;
 }
 
+.hero-wrapper {
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.hero-back-text {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 20vw;
+  /* responsive big text */
+  color: rgba(255, 255, 255, 0.08);
+  /* subtle back text */
+  z-index: 1;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* FRONT IMAGE (in front) */
+.hero-img {
+  position: relative;
+  z-index: 1;
+  max-width: 50vw;
+  /* responsive */
+}
+
 .nav-tabs .nav-link.active {
   /* background-color: #d7c39a; */
   color: #000;
@@ -53,37 +81,6 @@
   opacity: 0;
   animation: rise 1.5s ease forwards;
 }
-
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes rise {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 section form input,
 section form select {
   height: 50px;
@@ -132,14 +129,58 @@ footer a:hover {
   color: #ffffff !important;
   transition: 0.2s;
 }
+
 .navbar-nav .nav-link {
   font-weight: 500;
   color: #f8f9fa !important;
   transition: color 0.3s;
 }
 
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
 /* .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: #ffc107 !important;
   golden highlight
 } */
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+  .hero-back-text {
+    font-size: 32vw;
+  }
+
+  .hero-img {
+    max-width: 75vw;
+  }
+}
