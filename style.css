@@ -1,6 +1,6 @@
 * {
   background-color: #edf1d7;
-  /* padding: 4px; */
+  padding: 2px;
 }
 
 #header-Text {
@@ -48,24 +48,32 @@
 }
 
 .nav-tabs .nav-link {
-  color: #000000;
+  color: #555;
 }
-
-.card-back-1 {
+.reserve{
+  background-color: #4b785e;
+    color: white;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    transition: background 0.3s ease;
+}
+/* .card-back-1 {
   width: 220px;
   height: 220px;
-  /* top: px;
-  left: px; */
+  top: px;
+  left: px;
   transform: rotate(20deg);
 }
 
 .card-back-2 {
   width: 220px;
   height: 220px;
-  /* top: px;
-  left: px; */
+  top: px;
+  left: px;
   transform: rotate(40deg);
-}
+} */
 
 .animate-fade {
   opacity: 0;
@@ -81,6 +89,7 @@
   opacity: 0;
   animation: rise 1.5s ease forwards;
 }
+
 section form input,
 section form select {
   height: 50px;
@@ -92,12 +101,24 @@ section form select {
   transition: 0.3s;
 }
 
+.highlight-section {
 
+
+  background-color: #e4ba30;
+  padding: 60px 30px;
+  text-align: center;
+
+  color: #222;
+
+  margin: 80px auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
 
 .highlight-section h2 {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 30px;
+  background-color: inherit;
 }
 
 .highlight-section .btn {
@@ -115,13 +136,13 @@ section form select {
 }
 
 footer a:hover {
-  color: #ffffff !important;
+  color: #000000 !important;
   transition: 0.2s;
 }
 
 .navbar-nav .nav-link {
   font-weight: 500;
-  color: #f8f9fa !important;
+  color: #000000 !important;
   transition: color 0.3s;
 }
 
