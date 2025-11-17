@@ -48,7 +48,7 @@
 }
 
 .nav-tabs .nav-link {
-  color: #555;
+  color: #000000;
 }
 
 .card-back-1 {
@@ -92,18 +92,7 @@ section form select {
   transition: 0.3s;
 }
 
-.highlight-section {
-  background: #e4ba30;
-  
-  
-  padding: 60px 30px;
-  text-align: center;
- 
-  color: #222;
 
-  margin: 80px auto;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
 
 .highlight-section h2 {
   font-weight: 700;
