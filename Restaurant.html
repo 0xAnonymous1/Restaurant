@@ -12,70 +12,84 @@
 <body>
   <!-- hero section -->
   <section>
-    <!-- ✅ Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg py-3">
-      <div class="container">
-        <a class="navbar-brand fw-bold text-uppercase fs-4" href="Home.html">
-          Café
-        </a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav gap-3">
-            <li class="nav-item">
-              <a class="nav-link active" href="#Home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Restaurant">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+   <!-- ✅ Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg   py-3">
+  <div class="container">
+    <!-- Logo / Brand Name -->
+    <a class="navbar-brand fw-bold text-uppercase fs-4" href="#">
+      Café
+    </a>
 
+    <!-- Hamburger Toggle Button (for mobile) -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Burger Section -->
-    <!-- HERO SECTION -->
-    <div id="Home" class="container-fluid hero-wrapper d-flex justify-content-center align-items-center">
-      <div class="position-relative text-center">
-
-        <!-- BACK TEXT (Your same styling) -->
-        <h1 id="header-Text" class="display-3 fw-semibold text-uppercase fst-italic " style="font-family: 'Segoe UI';">
-          Burger
-        </h1>
-
-        <!-- FRONT IMAGE -->
-        <img src="/images/bg2.png" alt="Burger"
-          class="img-fluid hero-img position-absolute top-50 start-50 translate-middle">
-
-      </div>
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Restaurant">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+
+   <!-- Burger Section -->
+<!-- HERO SECTION -->
+<div class="container-fluid hero-wrapper d-flex justify-content-center align-items-center" id="Home">
+  <div class="position-relative text-center">
+
+    <!-- BACK TEXT (Your same styling) -->
+    <h1 
+      id="header-Text"
+      class="display-3 fw-semibold text-uppercase fst-italic "
+      style="font-family: 'Segoe UI';"
+    >
+      Burger
+    </h1>
+
+    <!-- FRONT IMAGE -->
+    <img 
+      src="/images/bg2.svg" 
+      alt="Burger" 
+      class="img-fluid hero-img position-absolute top-50 start-50 translate-middle"
+    >
+
+  </div>
+</div>
 
 
   </section>
   <!-- Table Reservation -->
-  <!-- Table Reservation Section -->
-  <section class="d-flex align-items-center justify-content-center text-center ">
-    <div>
-      <h1 class="">Exquisite Culinary</h1>
-      <h1 class="">Journey</h1>
-      <a href="#Reserve">
-        <button class="btn-lg px-4 reserve border">Reserve a Table</button>
-      </a>
-    </div>
-  </section>
+<!-- Table Reservation Section -->
+<section class="d-flex align-items-center justify-content-center text-center " >
+  <div>
+    <h1 class="">Exquisite Culinary</h1>
+    <h1 class="">Journey</h1>
+    <a href="#Reserve">
+    <button class="btn btn-warning btn-lg px-4">Reserve a Table</button></a>
+  </div>
+</section>
 
   <!-- our menu -->
   <section class="dflex">
@@ -86,216 +100,189 @@
 
 
     <!-- MENU SECTION START -->
-    <section id="Menu" class="container py-5 ">
-      <h2 class="fw-bold mb-4">Our Menu</h2>
+    <section class="container py-5" id="Menu">
+  <h2 class="fw-bold mb-4">Our Menu</h2>
 
-      <!-- Tabs -->
-      <ul class="nav nav-tabs mb-4" id="menuTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="starters-tab" data-bs-toggle="tab" data-bs-target="#starters"
-            type="button" role="tab" aria-controls="starters" aria-selected="true">
-            Snacks
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="maincourse-tab" data-bs-toggle="tab" data-bs-target="#maincourse" type="button"
-            role="tab" aria-controls="maincourse" aria-selected="false">
-            Meals
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="desserts-tab" data-bs-toggle="tab" data-bs-target="#desserts" type="button"
-            role="tab" aria-controls="desserts" aria-selected="false">
-            Sweets
-          </button>
-        </li>
-      </ul>
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-4" id="menuTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="starters-tab" data-bs-toggle="tab" data-bs-target="#starters" type="button" role="tab" aria-controls="starters" aria-selected="true">
+        Snacks
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="maincourse-tab" data-bs-toggle="tab" data-bs-target="#maincourse" type="button" role="tab" aria-controls="maincourse" aria-selected="false">
+        Meals
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="desserts-tab" data-bs-toggle="tab" data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">
+        Sweets
+      </button>
+    </li>
+  </ul>
 
-      <!-- Tab Content -->
-      <div class="tab-content">
+  <!-- Tab Content -->
+  <div class="tab-content">
 
-        <!-- Snacks -->
-        <div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="starters-tab">
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img
-              src="https://images.pexels.com/photos/30570738/pexels-photo-30570738/free-photo-of-assorted-indian-street-food-in-mumbai.jpeg"
-              alt="Pakoras" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Pakoras</h5>
-              <p class="text-muted mb-0">Fried vegetable fritters, a Gilgit favorite.</p>
-            </div>
-            <span class="fw-bold">700 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img
-              src="https://images.pexels.com/photos/29037272/pexels-photo-29037272/free-photo-of-crispy-fried-samosas-in-metal-colander.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Samosas" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Samosas</h5>
-              <p class="text-muted mb-0">Crispy pastry filled with spiced potatoes or meat.</p>
-            </div>
-            <span class="fw-bold">525 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-TRk-tikD6lPolEIVZU_DSTA02LhI_Vbc1Xqvg6NlMjzrNfvI1HVqI6yEmKDNIBuMsgRzA3EYWVRmJsaiSjF2y9YVylWDpv0iTG4o_qNNu8sj7APAvmrfGX0p_oVfrb7vAmFrd-1xuE_tDjwNJwfvkag7iurnfVhaDfbc0fnZGfkT4NPKi4A7i_iJ8rgA/w400-h266-rw/Chap%20Shuro%20Recipe%20-%20Recipica.png"
-              alt="Chapshuro Fingers" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Chapshuro Fingers</h5>
-              <p class="text-muted mb-0">Mini versions of the traditional meat-stuffed flatbread.</p>
-            </div>
-            <span class="fw-bold">1050 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="https://www.inspiredtaste.net/wp-content/uploads/2022/10/Baked-French-Fries-Recipe-2-1200.jpg"
-              alt="French Fries" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">French Fries</h5>
-              <p class="text-muted mb-0">Classic crispy fries with ketchup.</p>
-            </div>
-            <span class="fw-bold">700 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img
-              src="https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Chicken Nuggets" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Chicken Nuggets</h5>
-              <p class="text-muted mb-0">Crispy golden bites, perfect with sauces.</p>
-            </div>
-            <span class="fw-bold">1225 PKR</span>
-          </div>
+    <!-- Snacks -->
+    <div class="tab-pane fade show active" id="starters" role="tabpanel" aria-labelledby="starters-tab">
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="https://images.pexels.com/photos/30570738/pexels-photo-30570738/free-photo-of-assorted-indian-street-food-in-mumbai.jpeg" alt="Pakoras" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Pakoras</h5>
+          <p class="text-muted mb-0">Fried vegetable fritters, a Gilgit favorite.</p>
         </div>
-
-        <!-- Meals -->
-        <div class="tab-pane fade" id="maincourse" role="tabpanel" aria-labelledby="maincourse-tab">
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/chicken_burger.jpg" alt="Chicken Burger" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Chicken Burger</h5>
-              <p class="text-muted mb-0">Grilled chicken with fresh veggies and sauce.</p>
-            </div>
-            <span class="fw-bold">1750 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/mutton_wrap.jpg" alt="Mutton Wrap" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Mutton Wrap</h5>
-              <p class="text-muted mb-0">Soft wrap filled with spicy mutton and salad.</p>
-            </div>
-            <span class="fw-bold">2100 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/chapshuro.jpg" alt="Chapshuro (Full)" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Chapshuro (Full)</h5>
-              <p class="text-muted mb-0">Traditional meat-stuffed flatbread, very popular in Gilgit.</p>
-            </div>
-            <span class="fw-bold">1400 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/rice_chicken.jpg" alt="Rice with Chicken Curry" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Rice with Chicken Curry</h5>
-              <p class="text-muted mb-0">Steamed rice served with spicy chicken curry.</p>
-            </div>
-            <span class="fw-bold">1925 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/pizza_slice.jpg" alt="Pizza Slice" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Pizza Slice</h5>
-              <p class="text-muted mb-0">Cheesy slice with toppings of your choice.</p>
-            </div>
-            <span class="fw-bold">1050 PKR</span>
-          </div>
-        </div>
-
-        <!-- Sweets -->
-        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/ice_cream.jpg" alt="Ice Cream" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Ice Cream</h5>
-              <p class="text-muted mb-0">Classic flavors: vanilla, chocolate, strawberry.</p>
-            </div>
-            <span class="fw-bold">700 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/milkshake.jpg" alt="Milkshake" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Milkshake</h5>
-              <p class="text-muted mb-0">Delicious shakes made with fresh milk and flavors.</p>
-            </div>
-            <span class="fw-bold">1050 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img
-              src="https://images.pexels.com/photos/20446409/pexels-photo-20446409/free-photo-of-close-up-of-gajorer-halwa-dessert.jpeg"
-              alt="Suji Halwa" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Suji Halwa</h5>
-              <p class="text-muted mb-0">Traditional sweet semolina pudding.</p>
-            </div>
-            <span class="fw-bold">875 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/pastries.jpg" alt="Bakery Pastries" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Bakery Pastries</h5>
-              <p class="text-muted mb-0">Cakes, muffins, and local pastries from nearby bakeries.</p>
-            </div>
-            <span class="fw-bold">875 PKR</span>
-          </div>
-
-          <div class="d-flex align-items-center border-bottom py-3">
-            <img src="images/gur_balls.jpg" alt="Gur Sweet Balls" class="me-3"
-              style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
-            <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Gur Sweet Balls</h5>
-              <p class="text-muted mb-0">Traditional jaggery-based treats.</p>
-            </div>
-            <span class="fw-bold">525 PKR</span>
-          </div>
-        </div>
-
+        <span class="fw-bold">700 PKR</span>
       </div>
-    </section>
 
-    <!-- Bootstrap JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="https://images.pexels.com/photos/29037272/pexels-photo-29037272/free-photo-of-crispy-fried-samosas-in-metal-colander.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Samosas" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Samosas</h5>
+          <p class="text-muted mb-0">Crispy pastry filled with spiced potatoes or meat.</p>
+        </div>
+        <span class="fw-bold">525 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-TRk-tikD6lPolEIVZU_DSTA02LhI_Vbc1Xqvg6NlMjzrNfvI1HVqI6yEmKDNIBuMsgRzA3EYWVRmJsaiSjF2y9YVylWDpv0iTG4o_qNNu8sj7APAvmrfGX0p_oVfrb7vAmFrd-1xuE_tDjwNJwfvkag7iurnfVhaDfbc0fnZGfkT4NPKi4A7i_iJ8rgA/w400-h266-rw/Chap%20Shuro%20Recipe%20-%20Recipica.png" alt="Chapshuro Fingers" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Chapshuro Fingers</h5>
+          <p class="text-muted mb-0">Mini versions of the traditional meat-stuffed flatbread.</p>
+        </div>
+        <span class="fw-bold">1050 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="https://www.inspiredtaste.net/wp-content/uploads/2022/10/Baked-French-Fries-Recipe-2-1200.jpg" alt="French Fries" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">French Fries</h5>
+          <p class="text-muted mb-0">Classic crispy fries with ketchup.</p>
+        </div>
+        <span class="fw-bold">700 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chicken Nuggets" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Chicken Nuggets</h5>
+          <p class="text-muted mb-0">Crispy golden bites, perfect with sauces.</p>
+        </div>
+        <span class="fw-bold">1225 PKR</span>
+      </div>
+    </div>
+
+    <!-- Meals -->
+    <div class="tab-pane fade" id="maincourse" role="tabpanel" aria-labelledby="maincourse-tab">
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/chicken_burgur.png" alt="Chicken Burger" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Chicken Burger</h5>
+          <p class="text-muted mb-0">Grilled chicken with fresh veggies and sauce.</p>
+        </div>
+        <span class="fw-bold">1750 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/mutton_wrap.webp" alt="Mutton Wrap" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Mutton Wrap</h5>
+          <p class="text-muted mb-0">Soft wrap filled with spicy mutton and salad.</p>
+        </div>
+        <span class="fw-bold">2100 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/chapshoro.webp" alt="Chapshuro (Full)" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Chapshuro (Full)</h5>
+          <p class="text-muted mb-0">Traditional meat-stuffed flatbread, very popular in Gilgit.</p>
+        </div>
+        <span class="fw-bold">1400 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/Rice_with_Chicken _Curry.png" alt="Rice with Chicken Curry" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Rice with Chicken Curry</h5>
+          <p class="text-muted mb-0">Steamed rice served with spicy chicken curry.</p>
+        </div>
+        <span class="fw-bold">1925 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/pizza_slice.png" alt="Pizza Slice" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Pizza Slice</h5>
+          <p class="text-muted mb-0">Cheesy slice with toppings of your choice.</p>
+        </div>
+        <span class="fw-bold">1050 PKR</span>
+      </div>
+    </div>
+
+    <!-- Sweets -->
+    <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/ice_cream.png" alt="Ice Cream" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Ice Cream</h5>
+          <p class="text-muted mb-0">Classic flavors: vanilla, chocolate, strawberry.</p>
+        </div>
+        <span class="fw-bold">700 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/milkshake.png" alt="Milkshake" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Milkshake</h5>
+          <p class="text-muted mb-0">Delicious shakes made with fresh milk and flavors.</p>
+        </div>
+        <span class="fw-bold">1050 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/suji_halwa.webp" alt="Suji Halwa" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Suji Halwa</h5>
+          <p class="text-muted mb-0">Traditional sweet semolina pudding.</p>
+        </div>
+        <span class="fw-bold">875 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/pastries.png" alt="Bakery Pastries" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Bakery Pastries</h5>
+          <p class="text-muted mb-0">Cakes, muffins, and local pastries from nearby bakeries.</p>
+        </div>
+        <span class="fw-bold">875 PKR</span>
+      </div>
+
+      <div class="d-flex align-items-center border-bottom py-3">
+        <img src="/images/sweet_balls.png" alt="Gur Sweet Balls" class="me-3" style="width:80px; height:80px; object-fit:cover; border-radius:8px;">
+        <div class="flex-grow-1">
+          <h5 class="fw-bold mb-1">Gur Sweet Balls</h5>
+          <p class="text-muted mb-0">Traditional jaggery-based treats.</p>
+        </div>
+        <span class="fw-bold">525 PKR</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    
+   
 
 
-    <!-- MENU SECTION END -->
-
-
-    <!-- ✅ Journey of Our Flavor Section -->
-    <section class="container-fluid py-5" id="About">
+    <!--  Journey of Our Flavor Section -->
+    <section class="container-fluid py-5" id="About" >
       <div class="container">
 
         <div class="row align-items-center">
 
-          <!-- ✅ Text Content -->
+          <!--  Text Content -->
           <div class="col-md-6" data-bs-toggle="tooltip" title="Our Signature Taste">
             <h2 class="fw-bold display-5 animate-fade">A Journey of Our Flavor</h2>
             <p class="text-muted mt-3 animate-fade">
@@ -303,7 +290,7 @@
               Dive into a journey where taste meets craftsmanship, and every bite feels extraordinary.
             </p>
 
-            <!-- ✅ 3 Step Timeline -->
+            <!--  3 Step Timeline -->
             <ul class="list-unstyled mt-4">
               <li class="mb-3 d-flex align-items-center animate-slide">
                 <span class="badge bg-dark rounded-circle me-3">1</span>
@@ -319,22 +306,16 @@
               </li>
             </ul>
 
-            <!-- ✅ CTA -->
-             
-            <a href="#Menu" class="btn btn-dark px-4 py-2 rounded-pill mt-3 fw-semibold animate-fade">
+            
+             <a href="#Menu">
+            <button class="btn btn-dark px-4 py-2 rounded-pill mt-3 fw-semibold animate-fade">
               Explore Menu
-            </a>
-
-            <!-- ✅ Chef Signature -->
-            <div class="mt-4">
-              <img src="https://via.placeholder.com/120x40?text=Signature" class="img-fluid opacity-75"
-                alt="Chef Signature">
-              <p class="fw-bold mt-2">Head Chef — Mark Rivera</p>
-            </div>
+            </button>
+</a>
           </div>
 
 
-          <!-- ✅ Image & Slider Section -->
+          <!--  Image & Slider Section -->
           <div class="col-md-6 text-center position-relative animate-rise">
 
             <!-- Decorative Shape -->
@@ -342,25 +323,24 @@
               style="width: 300px; height: 300px; top:50%; left:50%; transform:translate(-50%,-50%); opacity:0.15;">
             </div>
 
-            <!-- ✅ Carousel Slider -->
+            <!--  Carousel Slider -->
             <div id="flavorCarousel" class="carousel slide shadow-lg rounded overflow-hidden"
               style="max-width:420px; margin:auto;" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://via.placeholder.com/450" class="d-block w-100 rounded" alt="Dish 1">
+                <div class="carousel-item active " >
+                  <img src="/images/currychikenrice.jpg" class="d-block w-100 rounded" alt="Dish 1">
                 </div>
                 <div class="carousel-item">
-                  <img src="https://via.placeholder.com/450/ffd" class="d-block w-100 rounded" alt="Dish 2">
+                  <img src="/images/chapshoro.webp" class="d-block w-100 rounded" alt="Dish 2">
                 </div>
                 <div class="carousel-item">
-                  <img src="https://via.placeholder.com/450/eee" class="d-block w-100 rounded" alt="Dish 3">
+                  <img src="/images/chicken_burgur.png" class="d-block w-100 rounded" alt="Dish 3">
                 </div>
               </div>
             </div>
 
-            <!-- ✅ Chef Stamp -->
-            <img src="https://via.placeholder.com/100x100?text=Seal" class="position-absolute"
-              style="bottom:-20px; right:-20px; opacity:0.7;" />
+           
+           
           </div>
 
         </div>
@@ -368,66 +348,52 @@
       </div>
     </section>
 
-    <!-- ✅ Gallery Section -->
+    <!-- Gallery Section -->
     <section class="container py-5" id="Restaurant">
-      <div  class="text-center mb-5">
-        <h2 class="fw-bold">Our Gallery</h2>
-        <p class="text-muted">A glimpse into our delicious flavors & cozy ambience</p>
-      </div>
 
-      <div class="row g-4">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Our Gallery</h2>
+    <p class="text-muted">A glimpse into our delicious flavors & cozy ambience</p>
+  </div>
 
-        <!-- Item 1 -->
-        <div class="col-md-4">
-          <a href="images/g1.jpg" data-bs-toggle="modal" data-bs-target="#imageModal1">
-            <img src="images/g1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="">
-          </a>
-        </div>
+  <div class="row g-4">
 
-        <!-- Item 2 -->
-        <div class="col-md-4">
-          <a href="images/g2.jpg" data-bs-toggle="modal" data-bs-target="#imageModal2">
-            <img src="images/g2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="">
-          </a>
-        </div>
+    <!-- Gallery Item -->
+    <div class="col-6 col-md-4">
+      <img src="/images/chapshoro.webp" class="gallery-img" alt="">
+    </div>
 
-        <!-- Item 3 -->
-        <div class="col-md-4">
-          <a href="images/g3.jpg" data-bs-toggle="modal" data-bs-target="#imageModal3">
-            <img src="images/g3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="">
-          </a>
-        </div>
+    <div class="col-6 col-md-4">
+      <img src="/images/chiken.webp" class="gallery-img" alt="">
+    </div>
 
-        <!-- Item 4 -->
-        <div class="col-md-4">
-          <a href="images/g4.jpg" data-bs-toggle="modal" data-bs-target="#imageModal4">
-            <img src="images/g4.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="">
-          </a>
-        </div>
+    <div class="col-6 col-md-4">
+      <img src="/images/fries.jpg" class="gallery-img" alt="">
+    </div>
 
-        <!-- Item 5 -->
-        <div class="col-md-4">
-          <a href="images/g5.jpg" data-bs-toggle="modal" data-bs-target="#imageModal5">
-            <img src="images/g5.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="">
-          </a>
-        </div>
+    <div class="col-6 col-md-4">
+      <img src="/images/pakora.jpg" class="gallery-img" alt="">
+    </div>
 
-        <!-- Item 6 -->
-        <div class="col-md-4">
-          <a href="images/g6.jpg" data-bs-toggle="modal" data-bs-target="#imageModal6">
-            <img src="images/g6.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="">
-          </a>
-        </div>
+    <div class="col-6 col-md-4">
+      <img src="/images/samosa.jpg" class="gallery-img" alt="">
+    </div>
 
-      </div>
-    </section>
+    <div class="col-6 col-md-4">
+      <img src="/images/mutton_wrap.webp" class="gallery-img" alt="">
+
+    </div>
+
+  </div>
+
+</section>
 
 
     <!-- ✅ Reserve A Table Section -->
     <section class="container py-5" id="Reserve">
       <div class="row align-items-center g-5">
 
-        <!-- ✅ Form Area -->
+        <!--  Form Area -->
         <div class="col-lg-6">
           <h2 class="fw-bold mb-3">Reserve A Table</h2>
           <p class="text-muted mb-4">
@@ -480,7 +446,7 @@
             style="width: 300px; height: 300px; top:50%; left:50%; transform:translate(-50%,-50%); opacity:0.15;">
           </div>
 
-          <img src="https://via.placeholder.com/450" class="img-fluid rounded shadow" alt="Restaurant Dining">
+          <img src="/images/dining.jpg" class="img-fluid rounded shadow" alt="Restaurant Dining">
 
           <div class="mt-4">
             <h5 class="fw-bold">Contact Us:</h5>
@@ -500,110 +466,70 @@
       </div>
     </section>
 
+    
 
+    <body>
 
+      <section class="highlight-section">
+        <h2>An Unforgettable<br>Dining Experience<br>Awaits</h2>
+        <a href="#Rserve">
+        <button class="btn">Reserve a Table</button></a>
+      </section>
+     
 
-    <section class="highlight-section">
-      <h2>An Unforgettable<br>Dining Experience<br>Awaits</h2>
-      <a href="#Reserve" style="background-color: transparent; color: white; text-decoration: none;">
-      <button class="btn btn-lg">Reserve a Table</button></a>
-    </section>
-    <!-- ✅ Image Modal Template (Copy & Duplicate for Each Image) -->
-    <div class="modal fade" id="imageModal1" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <img src="images/g1.jpg" class="img-fluid rounded" alt="">
-      </div>
-    </div>
+      <!-- ✅ Footer Section -->
+      <footer class="">
+        <div class="container">
 
-    <div class="modal fade" id="imageModal2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <img src="images/g2.jpg" class="img-fluid rounded" alt="">
-      </div>
-    </div>
+          <div class="row">
 
-    <div class="modal fade" id="imageModal3" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <img src="images/g3.jpg" class="img-fluid rounded" alt="">
-      </div>
-    </div>
-
-    <div class="modal fade" id="imageModal4" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <img src="images/g4.jpg" class="img-fluid rounded" alt="">
-      </div>
-    </div>
-
-    <div class="modal fade" id="imageModal5" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <img src="images/g5.jpg" class="img-fluid rounded" alt="">
-      </div>
-    </div>
-
-    <div class="modal fade" id="imageModal6" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <img src="images/g6.jpg" class="img-fluid rounded" alt="">
-      </div>
-    </div>
-
-    <!-- ✅ Footer Section -->
-    <footer class="">
-      <div class="container">
-
-        <div class="row">
-
-          <!-- ✅ Logo & About -->
-          <div class="col-md-4 mb-4">
-            <h4 class="fw-bold">Cafe</h4>
-            <p class="text-muted mt-2">
-              Experience flavors crafted with passion.
-              Your table awaits with elegance and taste.
-            </p>
-          </div>
-
-          <!-- ✅ Quick Links -->
-          <div class="col-md-4 mb-4">
-            <h5 class="fw-semibold mb-3">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="#Home" class="text-muted text-decoration-none d-block mb-2">Home</a></li>
-              <li><a href="#Menu" class="text-muted text-decoration-none d-block mb-2">Menu</a></li>
-              <li><a href="#About" class="text-muted text-decoration-none d-block mb-2">About</a></li>
-              <li><a href="#Restaurant" class="text-muted text-decoration-none d-block mb-2">Gallery</a></li>
-              <li><a href="#Contact" class="text-muted text-decoration-none d-block mb-2">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- ✅ Contact Info -->
-          <div class="col-md-4 mb-4">
-            <h5 class="fw-semibold mb-3">Contact Us</h5>
-
-            <p class="text-muted mb-1"> +92 300 1234567</p>
-            <p class="text-muted mb-1"> Gilgit-Baltistan, Pakistan</p>
-            <p class="text-muted mb-3"> 9:00 AM – 11:00 PM (Mon–Sun)</p>
-
-            <!-- ✅ Social Icons -->
-            <div class="d-flex gap-3 fs-4">
-              <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="text-muted"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="text-muted"><i class="bi bi-whatsapp"></i></a>
+            <!-- ✅ Logo & About -->
+            <div class="col-md-4 mb-4">
+              <h4 class="fw-bold">Cafe</h4>
+              <p class="text-muted mt-2">
+                Experience flavors crafted with passion.
+                Your table awaits with elegance and taste.
+              </p>
             </div>
+
+            <!-- ✅ Quick Links -->
+            <div class="col-md-4 mb-4">
+              <h5 class="fw-semibold mb-3">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#Home" class="text-muted text-decoration-none d-block mb-2">Home</a></li>
+                <li><a href="#Menu" class="text-muted text-decoration-none d-block mb-2">Menu</a></li>
+                <li><a href="#About" class="text-muted text-decoration-none d-block mb-2">About</a></li>
+                <li><a href="#Restaurant" class="text-muted text-decoration-none d-block mb-2">Gallery</a></li>
+                <li><a href="#Contact" class="text-muted text-decoration-none d-block mb-2">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- ✅ Contact Info -->
+            <div class="col-md-4 mb-4">
+              <h5 class="fw-semibold mb-3">Contact Us</h5>
+
+              <p class="text-muted mb-1"> +92 300 1234567</p>
+              <p class="text-muted mb-1"> Gilgit-Baltistan, Pakistan</p>
+              <p class="text-muted mb-3"> 9:00 AM – 11:00 PM (Mon–Sun)</p>
+
+            
+            </div>
+
           </div>
+
+          <hr class="border-secondary">
+
+          <p class="text-center text-muted mb-0">
+            © 2025 Cafe. All Rights Reserved.
+          </p>
 
         </div>
-
-        <hr class="border-secondary">
-
-        <p class="text-center text-muted mb-0">
-          © 2025 Cafe. All Rights Reserved.
-        </p>
-
+      </footer>
       </div>
-    </footer>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+      </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
