@@ -1,6 +1,6 @@
 * {
   background-color: #edf1d7;
-  padding: 4px;
+  padding: 2px;
 }
 
 #header-Text {
@@ -15,18 +15,28 @@
 
 .hero-wrapper {
   height: 100vh;
-  
 
   overflow: hidden;
 }
 
+.hero-back-text {
+  position: absolute;
 
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 20vw;
+  /* responsive big text */
+  color: rgba(255, 255, 255, 0.08);
+  /* subtle back text */
+  z-index: 1;
+  white-space: nowrap;
+  pointer-events: none;
+}
 
 /* FRONT IMAGE (in front) */
 .hero-img {
   position: relative;
   z-index: 1;
-  
   max-width: 50vw;
   /* responsive */
 }
@@ -38,24 +48,32 @@
 }
 
 .nav-tabs .nav-link {
-  color: #000000;
+  color: #555;
 }
-
-.card-back-1 {
+.reserve{
+  background-color: #4b785e;
+    color: white;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    transition: background 0.3s ease;
+}
+/* .card-back-1 {
   width: 220px;
   height: 220px;
-  /* top: px;
-  left: px; */
+  top: px;
+  left: px;
   transform: rotate(20deg);
 }
 
 .card-back-2 {
   width: 220px;
   height: 220px;
-  /* top: px;
-  left: px; */
+  top: px;
+  left: px;
   transform: rotate(40deg);
-}
+} */
 
 .animate-fade {
   opacity: 0;
@@ -71,6 +89,7 @@
   opacity: 0;
   animation: rise 1.5s ease forwards;
 }
+
 section form input,
 section form select {
   height: 50px;
@@ -83,14 +102,14 @@ section form select {
 }
 
 .highlight-section {
-  background: #f8d86b;
-  border: 2px solid #000;
-  border-radius: 20px;
+
+
+  background-color: #e4ba30;
   padding: 60px 30px;
   text-align: center;
-  font-family: 'Georgia', serif;
+
   color: #222;
-  max-width: 800px;
+
   margin: 80px auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -99,6 +118,7 @@ section form select {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 30px;
+  background-color: inherit;
 }
 
 .highlight-section .btn {
@@ -116,13 +136,13 @@ section form select {
 }
 
 footer a:hover {
-  color: #ffffff !important;
+  color: #000000 !important;
   transition: 0.2s;
 }
 
 .navbar-nav .nav-link {
   font-weight: 500;
-  color: #f8f9fa !important;
+  color: #000000 !important;
   transition: color 0.3s;
 }
 
